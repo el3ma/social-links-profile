@@ -66,7 +66,7 @@ body {
 .btn-container {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 20px 0;
     gap: 15px;
 
     .btn {
@@ -100,14 +100,26 @@ body {
 @media (min-width: 768px) {
     .container {
         margin: 9% auto;
+        width: 400px;
+        height: 68vh;
     }
 
-    .btn:hover {
-        background-color: var(--Green);
-        color: var(--Off-Black);
-        cursor: pointer;
+    .btn-container{
+        gap: 20px;
+        .btn{
+            padding: 15px 125px;
+            &:hover {
+                background-color: var(--Green);
+                color: var(--Off-Black);
+                cursor: pointer;
+            }
+        }
     }
-    .btn-special:hover{
+    
+    
+        
+
+    .btn-special:hover {
         background-color: var(--Green);
         color: var(--Off-Black);
         cursor: pointer;
